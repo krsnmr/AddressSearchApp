@@ -49,7 +49,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         String query = "SELECT addr_id, addr_name " +
                 "FROM mv_telros_address_view " +
                 "WHERE addr_name_low like ? " +
-                "ORDER BY prefiks_name, addr_whole_nmb, addr_build  " +
+                "ORDER BY prefiks_name, addr_whole_nmb, addr_build, addr_letter  " +
                 "LIMIT 10";
 
         String[] ar = addrStr.split("\\s|\\t|,|;|\\.|\\?|!|-|:|@|\\[|\\]|\\(|\\)|\\{|\\}|_|\\*|/");
